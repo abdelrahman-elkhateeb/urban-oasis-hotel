@@ -26,7 +26,6 @@ const navItems = [
   { name: "home", link: "index.html" },
   { name: "lively updates", link: "livelyUpdates.html" },
   { name: "Explore Our Spaces", link: "exploreSpaces.html" },
-  { name: "Book Your Stay", link: "bookYourStay.html" },
   { name: "contact us", link: "contactUs.html" },
 ];
 navItems.forEach((item) => {
