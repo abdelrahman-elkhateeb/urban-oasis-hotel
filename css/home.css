@@ -1,0 +1,379 @@
+/* start hero section */
+.hero-section .wrap {
+  height: calc(80vh - 55px);
+  background: url("../images/urban\ oasis\ \(3\).jpg");
+  background-size: cover;
+  background-position: 0px -160px;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.hero-section .wrap::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+  z-index: 2;
+}
+
+.hero-section .wrap .text {
+  font-size: 3rem;
+  position: relative;
+  z-index: 3;
+  color: var(--text-light);
+}
+
+.hero-section .wrap .text .big-text {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.hero-section .wrap .text .big-text span {
+  color: var(--secondary);
+}
+
+.hero-section .wrap .text p {
+  font-size: 2rem;
+}
+
+.hero-section .wrap .text p span {
+  color: var(--accent);
+  font-size: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .hero-section .wrap {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-section .wrap .text {
+    width: 90%;
+    font-size: 2rem;
+  }
+  .hero-section .wrap .text p {
+    font-size: 1.5rem;
+  }
+  .hero-section .wrap .text p span {
+    font-size: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section .wrap {
+    background-position: center;
+  }
+}
+
+.hero-section .wrap .bookNow {
+  width: max-content;
+  padding: 15px 25px;
+  background-color: var(--accent);
+  border: 0;
+  color: white;
+  position: relative;
+  z-index: 3;
+  margin-top: 20px;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+.hero-section .wrap .bookNow a {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+/* end hero section */
+/* start contact us */
+.about-us {
+  margin: 50px 0;
+}
+
+.about-us .container .text {
+  display: grid;
+  grid-template-areas: "🧀 🥟";
+  align-items: center;
+}
+
+.about-us .container .text h1 {
+  grid-area: 🧀;
+  position: relative;
+}
+
+
+/* .about-us .container .text h1 span {
+  position: relative;
+  display: inline-block;
+}
+
+.about-us .container .text h1 span::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  background-color: var(--accent);
+  z-index: -1;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+} */
+
+.about-us .container .text h4 {
+  line-height: 1.5;
+  grid-area: 🥟;
+  font-size: 18px;
+}
+
+.about-us .container .about-box {
+  display: grid;
+  grid-template-areas: "c v";
+  gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .about-us .container .text {
+    margin-bottom: 2rem;
+  }
+
+  .about-us .container .text,
+  .about-us .container .about-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.about-us .container .about-box .statistics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  grid-area: c;
+}
+
+.about-us .container .about-box .statistics .box {
+  padding: 20px;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+  background-color: var(--secondary);
+  color: var(--text-light);
+}
+
+.about-us .container .about-box .statistics .box h4 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-us .container .about-box .statistics .box p {
+  line-height: 1.5;
+}
+
+.about-us .container .about-box .statistics .box:nth-child(3n + 1) {
+  background-color: var(--accent);
+  color: var(--text-dark);
+}
+
+.about-us .container .about-box .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* align-items: center; */
+  grid-area: v;
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+.about-us .container .about-box .wrapper .box div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 1rem;
+}
+
+.about-us .container .about-box .wrapper .box div button {
+  background-color: var(--accent);
+  border: 0;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+  padding: 15px 20px;
+}
+
+.about-us .container .about-box .wrapper .box div button a {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.about-us .container .about-box .wrapper .box p {
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.about-us .container .about-box .wrapper .box p span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.about-us .container .about-box .wrapper .box img {
+  width: 100%;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+@media (max-width: 767px) {
+  .about-us .container .about-box .wrapper {
+    display: block;
+  }
+
+  .about-us .container .about-box .wrapper .box img {
+    display: none;
+  }
+}
+
+/* end contact us */
+
+/* start seaside serenity */
+.seaside {
+  margin: 50px 0;
+}
+.seaside .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+@media (max-width: 1199px) {
+  .seaside .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.seaside .container .img {
+  position: relative;
+  cursor: pointer;
+}
+
+.seaside .container .img::before,
+.seaside .container .img:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+  transition: var(--main-transition-duration);
+  -webkit-transition: var(--main-transition-duration);
+  -moz-transition: var(--main-transition-duration);
+  -ms-transition: var(--main-transition-duration);
+  -o-transition: var(--main-transition-duration);
+}
+
+.seaside .container .img::before {
+  background: url("../images/Seaside\ \(1\).jpg");
+  background-size: cover;
+  z-index: -1;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+
+.seaside .container .img:after {
+  z-index: -2;
+  background: var(--primary);
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+}
+
+.seaside .container .img:hover::before {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+
+.seaside .container .img:hover:after {
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+}
+
+.seaside .container .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+.seaside .container .txt h1 {
+  font-size: 3rem;
+  position: relative;
+}
+
+.seaside .container .txt p {
+  line-height: 1.5;
+  color: var(--text-dark);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .seaside .container .img {
+    display: none;
+  }
+  .seaside .container .txt p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+/* end seaside serenity */

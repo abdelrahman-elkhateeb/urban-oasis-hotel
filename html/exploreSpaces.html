@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>explore spaces</title>
+  <!-- css files -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- normalize-file -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/exploreSpaces.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <!-- google icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- start navbar -->
+  <header id="header"></header>
+  <!-- end navbar -->
+  <!-- start rooms and suits -->
+  <section class="roomsAndSuits">
+    <div class="container">
+      <div class="txt">
+        <h1 class="main-heading">
+          Discover Your Perfect Retreat
+        </h1>
+        <p>select from various types of rooms we serve you with.</p>
+      </div>
+      <div class="options">
+        <select for="rooms" id="rooms-options">
+          <option value="All">All Rooms</option>
+          <option value="Standard">Standard Room</option>
+          <option value="Deluxe">Deluxe Room</option>
+          <option value="Family">Family Suite</option>
+        </select>
+      </div>
+      <div class="rooms"></div>
+    </div>
+  </section>
+  <!-- end rooms and suits -->
+  <!-- start dinning -->
+  <section class="dinning">
+    <div class="container">
+      <div class="txt">
+        <h1 class="main-heading">Dine in Delight: A Gastronomic Adventure Awaits!</h1>
+        <p>Embark on a culinary journey like no other at Urban Oasis Hotel's dining section. From the vibrant colors of
+          farm-fresh
+          ingredients to the symphony of flavors curated by our expert chefs, every dish tells a story of passion and
+          creativity.
+          Whether you're savoring a gourmet meal in our elegant restaurant or enjoying handcrafted cocktails with
+          panoramic views
+          at our rooftop bar, prepare to tantalize your taste buds and awaken your senses in an atmosphere of culinary
+          excellence
+          and hospitality.</p>
+      </div>
+      <section aria-label="newest photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev"><i
+              class="fa-solid fa-chevron-left"></i></button>
+          <button class="carousel-button next" data-carousel-button="next"><i
+              class="fa-solid fa-chevron-right"></i></button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="../images/dinning (1).jpg" alt="">
+            </li>
+            <li class="slide">
+              <img src="../images/dinning (2).jpg" alt="">
+            </li>
+            <li class="slide">
+              <img src="../images/dinning (3).jpg" alt="">
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- end dinning -->
+  <!-- start activities -->
+  <section class="activites">
+    <div class="container">
+      <div class="text">
+        <h1 class="main-heading">
+          Explore and Engage: Our Vibrant Activities
+        </h1>
+        <p>Experience the pulse of excitement at Urban Oasis Hotel with our diverse range of activities. Whether you're
+          seeking
+          adventure, relaxation, or cultural exploration, we have something for everyone. Dive into the crystal-clear
+          waters for
+          snorkeling adventures, unwind with yoga sessions on the beach, or embark on guided tours to discover the
+          hidden gems of
+          the local area. From exhilarating water sports to immersive cultural experiences, our activities are designed
+          to create
+          unforgettable moments and enrich your stay with us.</p>
+      </div>
+      <div class="content">
+        <div class="card">
+          <img src="../images/Beachside.jpg" alt="">
+          <div class="txt">
+            <h4>Beachside Adventures</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/Adventure.jpeg" alt="">
+          <div class="txt">
+            <h4>Adventure Expeditions</h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/Wellness.jpg" alt="">
+          <div class="txt">
+            <h4>Wellness Retreats</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end activites -->
+  <!-- start hotel services -->
+  <section class="hotel-services">
+    <div class="container">
+      <div class="txt">
+        <h1 class="main-heading">
+          Tailored Hospitality: Our Hotel Services
+        </h1>
+        <p>Experience unparalleled convenience and comfort with our comprehensive range of hotel services, meticulously
+          designed to
+          enhance your stay at Urban Oasis Hotel.</p>
+      </div>
+      <div class="content">
+        <div class="card">
+          <div class="text">
+            <h3>Concierge Assistance</h3>
+            <p>Our dedicated concierge team is available 24/7 to meet your needs. From restaurant reservations to local
+              attraction
+              tips, they ensure your stay is seamless and memorable.</p>
+          </div>
+          <img src="../images/Concierge.jpg" alt="">
+        </div>
+        <div class="card">
+          <div class="text">
+            <h3>Room Service</h3>
+            <p>Enjoy 24-hour room service for convenient dining. Whether it's breakfast in bed, a midnight snack, or a
+              gourmet meal,
+              our attentive staff is dedicated to satisfying your culinary desires.</p>
+          </div>
+          <img src="../images/Room Service.jpg" alt="">
+        </div>
+        <div class="card">
+          <div class="text">
+            <h3>Housekeeping</h3>
+            <p>Enjoy luxury accommodations with meticulous housekeeping services. Our dedicated team ensures
+              immaculately clean rooms,
+              fresh linens, and amenities for your relaxation.</p>
+          </div>
+          <img src="../images/Housekeeping.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end hotel services -->
+  <!--start Footer -->
+  <footer id="main-footer"></footer>
+  <!-- end footer -->
+  <script src="../js/navBar.js"></script>
+  <script src="../js/footer.js"></script>
+  <script type="module" src="../js/exploreSpaces.js"></script>
+</body>
+
+</html>

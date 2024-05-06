@@ -1,0 +1,103 @@
+.bookForm .container {
+  height: calc(100vh - 100px);
+  display: grid;
+  place-items: center;
+}
+
+.bookForm .container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+@media (min-width: 1199px) {
+  .bookForm .container .wrapper {
+    width: 80%;
+  }
+}
+
+.bookForm .container .wrapper img {
+  width: 100%;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+.bookForm .container .wrapper form {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--primary);
+  padding: 1rem;
+  background-color: hsl(176, 100%, 39%, 50%);
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+.bookForm .container .wrapper form h1 {
+  margin-top: 40px;
+}
+
+.bookForm .container .wrapper form > div {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.bookForm .container .wrapper form > div .data-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.bookForm .container .wrapper form .data-wrap input {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.bookForm .container .wrapper form .comment-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 500;
+}
+
+.bookForm .container .wrapper form .comment-wrap textarea {
+  resize: none;
+  flex-basis: 200px;
+  width: 100%;
+  padding: 20px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.bookForm .container .wrapper form .data-wrap input:focus,
+.bookForm .container .wrapper form .comment-wrap textarea:focus {
+  outline: none;
+}
