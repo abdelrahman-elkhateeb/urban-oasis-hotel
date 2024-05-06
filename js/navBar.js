@@ -30,26 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if ("index.html" === location.pathname) {
     navItems = [
-      { name: "home", link: "/urban-oasis-hotel/index.html" },
-      { name: "lively updates", link: "/urban-oasis-hotel/livelyUpdates.html" },
-      {
-        name: "Explore Our Spaces",
-        link: "/urban-oasis-hotel/exploreSpaces.html",
-      },
-      { name: "contact us", link: "/urban-oasis-hotel/contactUs.html" },
+      { name: "home", link: "index.html" },
+      { name: "lively updates", link: "livelyUpdates.html" },
+      { name: "Explore Our Spaces", link: "exploreSpaces.html" },
+      { name: "contact us", link: "contactUs.html" },
     ];
   } else {
     navItems = [
-      { name: "home", link: "/urban-oasis-hotel/index.html" },
-      {
-        name: "lively updates",
-        link: "/urban-oasis-hotel/html/livelyUpdates.html",
-      },
-      {
-        name: "Explore Our Spaces",
-        link: "/urban-oasis-hotel/html/exploreSpaces.html",
-      },
-      { name: "contact us", link: "/urban-oasis-hotel/html/contactUs.html" },
+      { name: "home", link: "../index.html" },
+      { name: "lively updates", link: "../html/livelyUpdates.html" },
+      { name: "Explore Our Spaces", link: "../html/exploreSpaces.html" },
+      { name: "contact us", link: "../html/contactUs.html" },
     ];
   }
 
