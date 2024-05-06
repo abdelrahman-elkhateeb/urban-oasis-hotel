@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const logo = document.createElement("h1");
   logo.classList.add("logo");
   const logoLink = document.createElement("a");
-  logoLink.setAttribute("href", "index.html");
+
+  if ("index.html" === location.pathname) logoLink.href = "index.html";
+  else logoLink.href = "../index.html";
+
   logoLink.textContent = "Urban ";
   const spanElement = document.createElement("span");
   spanElement.textContent = "Oasis";
