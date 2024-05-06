@@ -40,16 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
   } else {
     navItems = [
-      { name: "home", link: "../urban-oasis-hotel/index.html" },
+      { name: "home", link: "/urban-oasis-hotel/index.html" },
       {
         name: "lively updates",
-        link: "../urban-oasis-hotel/html/livelyUpdates.html",
+        link: "/urban-oasis-hotel/html/livelyUpdates.html",
       },
       {
         name: "Explore Our Spaces",
-        link: "../urban-oasis-hotel/html/exploreSpaces.html",
+        link: "/urban-oasis-hotel/html/exploreSpaces.html",
       },
-      { name: "contact us", link: "../urban-oasis-hotel/html/contactUs.html" },
+      { name: "contact us", link: "/urban-oasis-hotel/html/contactUs.html" },
     ];
   }
 
